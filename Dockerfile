@@ -1,6 +1,6 @@
 FROM node:alpine
 
-RUN apk --update add python3 curl bash make && \
+RUN apk --update add python3 curl bash make g++ && \
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
     python3 get-pip.py && \
     pip install -U pip awscli && \
